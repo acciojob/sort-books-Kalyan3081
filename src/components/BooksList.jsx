@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchBooks } from "./actions";
 
 const BooksList = () => {
+    <h1>Books List</h1>
     const dispatch = useDispatch();
 
     // Get data from Redux store
