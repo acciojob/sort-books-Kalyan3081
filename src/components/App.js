@@ -1,11 +1,14 @@
-
+import { Provider } from 'react-redux'
+import BooksList from './BooksList '
+import store from './store'
 import React from "react";
-import './../styles/App.css';
 
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <Provider store={store}>
+        <BooksList />
+      </Provider>
     </div>
   )
 }
